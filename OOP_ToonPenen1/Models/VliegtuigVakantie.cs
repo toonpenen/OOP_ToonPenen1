@@ -6,7 +6,19 @@ using System.Threading.Tasks;
 
 namespace OOP_ToonPenen1.Models
 {
-    class VliegtuigVakantie
+    public class VliegtuigVakantie : Reis
     {
+        private double VliegtuigTicketPrijs { get; set;}
+
+        public VliegtuigVakantie(DateTime dateTime, double vliegtuigTicket, DateTime vertrekDatum, DateTime terugkeerDatum, double vliegtuigTicketPrijs) : base(vertrekDatum, terugkeerDatum)
+        {
+            VliegtuigTicketPrijs = vliegtuigTicketPrijs;
+        }
+
+        public override double BerekenPrijs()
+        {
+            return base.BerekenPrijs();
+        }
+
     }
 }

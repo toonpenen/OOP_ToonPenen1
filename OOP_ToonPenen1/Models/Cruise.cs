@@ -6,7 +6,27 @@ using System.Threading.Tasks;
 
 namespace OOP_ToonPenen1.Models
 {
-    class Cruise
+    public class Cruise:Reis
     {
+        private const double CRUISEPRIJSEXTRADAGKOST = 10;
+
+        public bool VIP { get; set; }
+
+        public Cruise(DateTime dateTime, DateTime dateTime1, int v, bool vIP)
+        {
+            VIP = vIP;
+        }
+
+        public override double BerekenPrijs()
+        {
+            if (VIP == true)
+            {
+                return base.BerekenPrijs() + ((CRUISEPRIJSEXTRADAGKOST * AantalPersonen) *1.5);
+            }
+            else
+            {
+                return base.BerekenPrijs();
+            }
+        }
     }
 }

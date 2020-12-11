@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace OOP_ToonPenen1.Models
 {
-    class Persoon
+    public class Persoon
     {
+        public string Naam { get { return $"{VoorNaam} {FamilieNaam}"; } }
+        public Adres Adres { get; set; }
+        public string VoorNaam { get; set; }
+        public string FamilieNaam { get; set; }
     }
 }

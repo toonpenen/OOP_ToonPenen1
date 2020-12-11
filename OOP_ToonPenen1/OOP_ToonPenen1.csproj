@@ -46,18 +46,22 @@
     <Compile Include="Models\Adres.cs" />
     <Compile Include="Models\AutoVakantie.cs" />
     <Compile Include="Models\Cruise.cs" />
-    <Compile Include="Models\ILoggable.cs" />
+    <Compile Include="Models\Iloggable.cs" />
     <Compile Include="Models\LoggerService.cs" />
     <Compile Include="Models\LogMessage.cs" />
     <Compile Include="Models\Persoon.cs" />
     <Compile Include="Models\Reis.cs" />
     <Compile Include="Models\ReisBureau.cs" />
     <Compile Include="Models\ReisMaatschappij.cs" />
+    <Compile Include="Models\ReisReservatie.cs" />
     <Compile Include="Models\VliegtuigVakantie.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\.editorconfig">
+      <Link>.editorconfig</Link>
+    </None>
     <None Include="App.config" />
     <None Include="ClassDiagram1.cd" />
   </ItemGroup>

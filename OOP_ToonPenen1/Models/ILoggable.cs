@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace OOP_ToonPenen1.Models
 {
-    class ILoggable
+    public interface Iloggable
     {
+        LogMessage LogMessage { get; }
     }
 }

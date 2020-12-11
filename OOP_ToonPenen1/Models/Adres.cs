@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace OOP_ToonPenen1.Models
 {
-    class Adres
+    public class Adres
     {
+        public string Straat { get; set; }
+        public string HuisNummer { get; set; }
+        public string PostCode { get; set; }
+        public string Gemeente { get; set; }
     }
 }
